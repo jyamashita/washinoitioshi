@@ -1,1 +1,2 @@
 # washinoitioshi
+「ここじゃろぉ」
