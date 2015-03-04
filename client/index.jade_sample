@@ -1,0 +1,14 @@
+head
+  title Todo List
+
+body
+  div(class="container")
+    header
+      h1 Todoリスト
+
+      form(class="new-task")
+        input(type="text", name="text", placeholder="Type to add new tasks")
+
+    ul
+      +each tasks
+        +task

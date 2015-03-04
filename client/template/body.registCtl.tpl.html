@@ -1,0 +1,15 @@
+<template name="registCtl">
+  <div class="searchShop">
+    <form>
+      <input type="text" name="searchText" />
+    </form>
+    <div>
+      <ul>
+        {{#each searchResult}}
+        <li>{{name}}</li>
+        {{/each}}
+      </ul> 
+    </div>
+  </div>
+  <div class="map-camvas"></div>
+</template>
