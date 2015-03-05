@@ -23,7 +23,7 @@
   "name": "飯酒盃",
   "description": "創作居酒屋",
   "address": "東京都大田区蒲田XXX",
-  "location": { lat: "35.563495", lng: "139.717516" },
+  "location": { "lat": "35.563495", "lng": "139.717516" },
   "updateDate": "2013-01-01 00:00:00",
   "createDate": "2013-01-01 00:00:00"
 }
