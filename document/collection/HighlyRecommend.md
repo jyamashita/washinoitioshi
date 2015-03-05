@@ -22,12 +22,12 @@
 name:
 loc:[ "緯度", "経度" ]
 types: ["食事", "カフェ", "テイクアウト", "買い物", "名所旧跡", "その他"]
-address:
-tel:
-url:
-recommender:
-date:
-introduce:
+address: "東京大田区XXXX",
+tel: "000-000-000",
+url: "http://example.com/",
+recommender: "",
+date: "2013-01-01 13:13:13",
+introduce: "",
 comments: ["commentator", "date", "comment"]
 photos: ["uploader", "date", "title", "photoid"]
 ```
