@@ -8,8 +8,8 @@
 | description | 説明        | String       |              |
 | address     | 住所        | String       |              |
 | location    | 位置情報    | location     |              |
-| UpdateDate　| 更新日時    | Date         |              |
-| CreateDate  | 作成日時    | Date         |              |
+| updateDate　| 更新日時    | Date         |              |
+| createDate  | 作成日時    | Date         |              |
 
 ### location
 | 内容        | 内容        | データ型     | 備考         |
