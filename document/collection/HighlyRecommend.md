@@ -1,7 +1,7 @@
 # HighlyRecommend
 
 
-```json
+```javascript
 name:
 loc:[ 緯度, 経度 ]
 types:{“食事”, “カフェ”, “テイクアウト”, “買い物”. “名所旧跡”, “その他”}
