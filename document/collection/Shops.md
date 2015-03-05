@@ -19,9 +19,9 @@
 
 
 ### Sample
-```json
+```javascript
 {
-  _db: '',
-  name: ''
+  "_db": "",
+  "name": ""
 }
 ```
