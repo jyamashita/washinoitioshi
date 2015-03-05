@@ -1,7 +1,7 @@
 # Shops
 | 物理名      | 内容        |  データ型    | 備考         |
 |:------------|:------------|:-------------|:-------------|
-| _db         | ショップID  | String       |IDENTITY      |
+| _id         | ショップID  | String       |IDENTITY      |
 | name        | ショップ名  | String       |              |
 | description | 説明        | String       |              |
 | address     | 住所        | String       |              |
