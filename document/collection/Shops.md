@@ -9,7 +9,7 @@
 | updateDate　| 更新日時    | Date         |              |
 | createDate  | 作成日時    | Date         |              |
 
-### Location
+## Location
 | 物理名      | 内容        | データ型     | 備考         |
 |:-----------:|:------------|:-------------|:-------------|
 | lat         | 緯度        | String       |              |
