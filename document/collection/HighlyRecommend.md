@@ -1,7 +1,7 @@
 # HighlyRecommend
 | 物理名      | 内容        |  データ型    | 備考         |
 |:------------|:------------|:-------------|:-------------|
-| _db         | ショップID  | String       |IDENTITY      |
+| _id         | ショップID  | String       |IDENTITY      |
 | name        | ショップ名  | String       |              |
 | loc         | 位置情報    | Array<String>|              |
 | types       | タイプ      | String       |              |
