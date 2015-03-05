@@ -20,7 +20,7 @@
 ```json
 {
   "_id": "zsGtrFu",
-  "name": "飯酒盃",
+  "name": "わしのいちおし",
   "description": "創作居酒屋",
   "address": "東京都大田区蒲田XXX",
   "location": { "lat": "35.563495", "lng": "139.717516" },
