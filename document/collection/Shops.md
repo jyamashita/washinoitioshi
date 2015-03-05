@@ -19,7 +19,7 @@
 
 
 ### Sample
-```javascript
+```json
 {
   "_db": "",
   "name": ""
