@@ -46,8 +46,8 @@
   "recommender": "入野　潔",
   "date": "2015-01-01 13:13:13",
   "introduce": "2014年に百周年を迎えました。赤レンガ駅舎が復原。",
-  "comments": [{"commentator": "森田　秀明", "date":　"2015-02-02 02:02:02", "comment": "東京駅開業100周年記念Suica当りました"},
-               {"commentator": "山下　順平", "date":　"2015-02-02 02:02:02", "comment":　"..."}],
+  "comments": [{"commentator": "森田　秀明", "date": "2015-02-02 02:02:02", "comment": "東京駅開業100周年記念Suica当りました"},
+               {"commentator": "山下　順平", "date": "2015-02-02 02:02:02", "comment": "..."}],
   "photos": [{"uploader": "田中　瑞規", "date": "2013-03-03 13:13:13", "title": "０地点", "photoid": "12345"}]
 }
 ```
