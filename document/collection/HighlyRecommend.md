@@ -24,6 +24,8 @@
 | date        | 日時        | Date           |              |
 | comment     | コメント    | String         |              |
 
+[Comment](https://github.com/jyamashita/washinoitioshi/blob/master/document/collection/Comment.md)
+
 #Photo(実体は別スキーマ)
 | 物理名      | 内容        |  データ型      | 備考         |
 |:------------|:------------|:---------------|:-------------|
