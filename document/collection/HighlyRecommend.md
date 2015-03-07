@@ -8,7 +8,7 @@
 | address     | 住所        | String         |              |
 | tel         | 電話番号    | String         |              |
 | url         | URL         | String         |              |
-| recommender | 紹介者      | String         |              |
+| recommender | 推薦者      | String         |              |
 | date        | 日時        | Date           |              |
 | introduce   | 紹介文      | String         |              |
 | comments    | コメント    | Array<Comment> |              |
