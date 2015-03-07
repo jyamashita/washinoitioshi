@@ -35,6 +35,8 @@
 | title       | タイトル    | String         |              |
 | photid      | 写真ID      | String         |              |
 
+[Photo](https://github.com/jyamashita/washinoitioshi/blob/master/document/collection/Photos.md)
+
 ## Sample
 ```json
 {
