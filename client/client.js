@@ -1,4 +1,4 @@
-Shops = new Mongo.Collection("shops");
+HighlyRecommends = new Mongo.Collection("highlyrecommends");
 sGMaps = null;
 rGMaps = null;
 
@@ -40,14 +40,14 @@ rGMaps = null;
     searchResult : function() {
       if (Session.get('searchCtl.searchText')) {
         var selector = {};
-        selector['description'] = new RegExp(Session.get('searchCtl.searchText'));
-        console.log('find' + selector['description']);
-        var searchResult = Shops.find(selector);
+        selector['introduce'] = new RegExp(Session.get('searchCtl.searchText'));
+        console.log('find' + selector['introduce']);
+        var searchResult = HighlyRecommends.find(selector);
         if (searchResult == null || searchResult.mode) return;
         if (0 < searchResult.count()) {
-        　var shops = searchResult.fetch();
-          sGMaps.addMarkers(shops);
-          return shops;
+        　var highlyRecommends = searchResult.fetch();
+          sGMaps.addMarkers(highlyRecommends);
+          return highlyRecommends;
         } else {
           sGMaps.removeMarkers();
         }
@@ -61,14 +61,14 @@ rGMaps = null;
     searchResult : function() {
       if (Session.get('registCtl.searchText')) {
         var selector = {};
-        selector['description'] = new RegExp(Session.get('registCtl.searchText'));
-        console.log('find' + selector['description']);
-        var searchResult = Shops.find(selector);
+        selector['introduce'] = new RegExp(Session.get('registCtl.searchText'));
+        console.log('find' + selector['introduce']);
+        var searchResult = HighlyRecommends.find(selector);
         if (searchResult == null || searchResult.mode) return;
         if (0 < searchResult.count()) {
-          var shops = searchResult.fetch();
-          rGMaps.addMarkers(shops);
-          return shops;
+          var highlyRecommends = searchResult.fetch();
+          rGMaps.addMarkers(highlyRecommends);
+          return highlyRecommends;
         } else {
           rGMaps.removeMarkers();
         }

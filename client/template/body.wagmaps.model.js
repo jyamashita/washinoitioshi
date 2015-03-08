@@ -42,13 +42,16 @@ if (typeof wa === 'undefined') {
      * @param {Object} param
      */
     self.addMarker = function(param) {
-      var shop = param.shop;
+      console.log('do addMarker: [param:' + JSON.stringify(param) + ']');
+      console.log('do addMarker: [loc:' + JSON.stringify(param.highlyRecommend.loc[1]) + ']');
+      
+      var highlyRecommend = param.highlyRecommend;
       var clickCallback = param.clickCallback;
       
       var marker = new google.maps.Marker({
         map : this.map,
         draggable : false,
-        position : new google.maps.LatLng(shop.location.lat, shop.location.lng),
+        position : new google.maps.LatLng(highlyRecommend.loc[0], highlyRecommend.loc[1]),
       });
       this.markers.push(marker);
       
@@ -70,13 +73,13 @@ if (typeof wa === 'undefined') {
     /**
      * 
      */
-    self.addMarkers = function(shops) {
+    self.addMarkers = function(highlyRecommends) {
       var modal = wa.model.ShopDetailModal;
       self.removeMarkers();
-      shops.forEach(function(shop) {
+      highlyRecommends.forEach(function(highlyRecommend) {
         self.addMarker({
-          shop: shop,
-          clickCallback: function() { modal.show(shop); }
+          highlyRecommend: highlyRecommend,
+          clickCallback: function() { modal.show(highlyRecommend); }
         });
       });
     };
@@ -91,15 +94,15 @@ if (typeof wa === 'undefined') {
           self.removeMarkers();
           results.forEach(function(result) {
             console.debug('google map search:' + JSON.stringify(result));
-            var shop = {
+            var highlyRecommend = {
               name: result.name,
               address: result.formatted_address,
-              location: { lat: result.geometry.location.k, lng: result.geometry.location.D }
+              loc: [ result.geometry.location.k, result.geometry.location.D ]
             };
             self.addMarker({
-              shop: shop,
+              highlyRecommend: highlyRecommend,
               clickCallback: function() {
-                modal.show(shop);
+                modal.show(highlyRecommend);
               }
             });
           });

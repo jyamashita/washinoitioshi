@@ -18,9 +18,9 @@ if (typeof wa === 'undefined') {
   _.ShopDetailModal = new function() {
     var self = this;
     
-    self.show = function(shop) {
-      console.debug('modal:' + JSON.stringify(shop));
-      Session.set('template.shopDetailModal.dataModel', shop);
+    self.show = function(highlyRecommend) {
+      console.debug('modal:' + JSON.stringify(highlyRecommend));
+      Session.set('template.shopDetailModal.dataModel', highlyRecommend);
       $('#shopDetailModal').modal();
     };
   };
